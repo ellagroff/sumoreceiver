@@ -38,10 +38,12 @@ basic.showString("R")
 basic.forever(function () {
     if (action == "A") {
         comment.comment("Insert A-Button Action Between These Comments")
+        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 60)
         comment.comment("Insert A-Button Action Between These Comments")
         action = "Z"
     } else if (action == "B") {
         comment.comment("Insert B-Button Action Between These Comments")
+        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 0)
         comment.comment("Insert B-Button Action Between These Comments")
         action = "Z"
     } else if (action == "AB") {
